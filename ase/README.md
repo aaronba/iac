@@ -23,7 +23,6 @@ Note: It would be possible (and better) to deploy the certificate using Key Vaul
 <img src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazuregov.png"
 </a>
     
-  No ILB CERT
-  <a href="https://transmogrify.azurewebsites.net/ase/azuredeploy.json?environment=gov" target="_blank">
+<a href="https://transmogrify.azurewebsites.net/ase/asedeploy-noilbcert.json?environment=gov" target="_blank">
 <img src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazuregov.png"
 </a>
