@@ -2,6 +2,7 @@
     "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
+        "whitelist": {            "type": "string",            "defaultValue": "null"        },
         "subnetId": {
             "type": "string",
             "defaultValue": "null"
@@ -146,6 +147,7 @@
             ],
             "kind": "ASEV2",
             "location": "[variables('locationLUT')[resourceGroup().location]]",
+            "userWhitelistedIpRanges":  "[parameters('whitelist')]",
             "properties": {
                 "name": "[variables('aseName')]",
                 "location": "[variables('locationLUT')[resourceGroup().location]]",
